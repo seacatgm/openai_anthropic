@@ -1,0 +1,60 @@
+metric,entity,period,value,unit,status,source_ids,note
+power_capacity,OpenAI,end-2023,0.2,GW,V2,S01,раскрыто компанией; округлено
+power_capacity,OpenAI,end-2024,0.6,GW,V2,S01,
+power_capacity,OpenAI,end-2025,1.9,GW,V2,S01,Epoch: 90% IT-мощность
+power_capacity_it_modelled,OpenAI,end-2025,1950 (1441–2291),MW,E,S04,медиана и 90% ДИ
+h100e,OpenAI,end-2023,103000,H100e,E,S02,
+h100e,OpenAI,end-2024,386000,H100e,E,S02,альт. модель по расходам 506k
+h100e,OpenAI,end-2025,1743000 (1251000–2185000),H100e,E,S02,альт. модель по расходам 1.64M
+chip_mix_hopper_to_blackwell_count,OpenAI,end-2025,1.48:1,ratio,E,S04,
+physical_accelerators,OpenAI,end-2025,1.1–1.2M,chips,E,calc,"1.95 GW IT / 1.71 kW; Blackwell ~40% штук, ~63% H100e"
+share_world_ai_compute,OpenAI,end-2025,10–15,%,E,S05,мир ~20M H100e
+power_capacity_estimate,Anthropic,end-2025,1.4,GW,V2,S11,оценка OpenAI; Epoch моделирует 1.0–1.9 GW IT
+h100e,Anthropic,end-2024,209000 (145000–298000),H100e,E,S04,
+h100e,Anthropic,end-2025,1190000 (842000–1717000),H100e,E,S02,
+trainium2_share_it_power,Anthropic,end-2025,52 (35–70),%,E,S04,
+physical_accelerators,Anthropic,end-2025,1.25–1.3M,chips,E,calc,~820k Trainium2 + 420–470k NVIDIA/TPU
+trainium2_chips_in_use,Anthropic,2026-04-20,>1000000,chips,V,S25,заявление компании
+rainier_h100e,Anthropic,end-2025,470000,H100e,E,S04,~700k Trainium2; +~200k H100e в 1H 2026
+colossus1_gpus,Anthropic,2026-05-06,>220000,GPU,V,S27,H100/H200/GB200; ~300 MW; ~280k H100e по Epoch
+colossus1_lease,Anthropic,2026-05 to 2029-05,1.25,B USD/month,V,S27,>$40B всего; выход за 90 дней
+contracted_aws,Anthropic,2026-04-20,up to 5,GW,V,S25,>$100B за 10 лет; ~1 GW Trainium2/3 к концу 2026
+contracted_google_tpu_2026,Anthropic,2025-10-23,up to 1M TPU; >1,chips; GW,K,S43,
+contracted_google_broadcom_2027,Anthropic,2026-04-06,~3.5,GW,V,S26,по 8-K Broadcom; 'несколько GW' в анонсе
+contracted_azure,Anthropic,2025-11-18,up to 1,GW,K,S44,$30B Azure
+openai_forecast_anthropic_gw,Anthropic,end-2026 / end-2027,3–4 / 7–8,GW,V2,S11,оценка конкурента
+compute_budget,OpenAI,2026,50,B USD,V2,S13,≈3× к 2025
+compute_spend_cloud,OpenAI,2024,6.8,B USD,V,S04,
+compute_spend_cloud,OpenAI,2025,16.3,B USD,V,S04,
+rd_compute,OpenAI,2024,~5,B USD,V,S07,обучение 3 + исследования 1 (амортиз.)
+inference_compute,OpenAI,2024,~2 (1.8),B USD,V,S07,
+rd_compute,OpenAI,2025,~8,B USD,V,S04,'около половины'
+inference_compute,OpenAI,2025,8.4 (>8),B USD,V2,S16;S09,рост в 4 раза
+training_plan,OpenAI,2026,32,B USD,V2,S15,"The Information, февраль 2026"
+training_plan,OpenAI,2027,~65,B USD,V2,S15,
+inference_plan_old_vintage,OpenAI,2026,14.1,B USD,V2,S16,винтаж до февраля 2026
+compute_spend_through_2030,OpenAI,2026–2030,~600,B USD,V2,S14,
+adj_gross_margin,OpenAI,2025,33,%,V2,S14;S15,2024: 40%
+revenue,OpenAI,2025,13.07,B USD,V2,S15;S34,план 2026: $30B
+contracted_us_capacity,OpenAI,2026-04-29,10,GW,V2,S12,цель ставилась на 2029
+ohio_lease_it,OpenAI,2026-08-17,~8,GW IT,V2,S24,20 лет; NVIDIA backstop до $105B; первая фаза 800 MW в 2028
+abilene_tracking,OpenAI,2026-09-17,421 MW IT; ~509k H100e,,E,S37,к Q4 ~1.02M H100e (данные сессии 21.09; обновить)
+compute_spend_cloud,Anthropic,2024,2.5,B USD,V,S04,
+compute_spend_cloud,Anthropic,2025,6.8,B USD,V,S06,всего расходов $9.7B
+rd_compute,Anthropic,2025,4.1,B USD,V,S06,"прогноз компании, середина декабря"
+inference_compute,Anthropic,2025,~2.7,B USD,E,S06,из 40% GM при выручке $4.5B
+revenue,Anthropic,2025,4.5,B USD,V,S06,
+revenue,Anthropic,Q1 2026,4.8,B USD,V2,S29,
+revenue_forecast,Anthropic,Q2 2026,10.9,B USD,V2,S29,прогноз компании
+compute_to_revenue,Anthropic,Q1 2026,0.71,ratio,V2,S29,включая обучение
+compute_to_revenue,Anthropic,Q2 2026,0.56,ratio,V2,S29,прогноз; ~$6B compute за квартал (Epoch)
+operating_profit_forecast,Anthropic,Q2 2026,0.559,B USD,V2,S29,без SBC
+run_rate_revenue,Anthropic,2026-04,30,B USD,V,S26,~$9B на конец 2025
+third_party_inference_share,Anthropic,2025,~10,% of compute,E,S04,включено в оценку Epoch
+third_party_inference_share,OpenAI,2025,up to ~25,% of fleet,E,S04,исключено из оценки Epoch
+gartner_ai_iaas,Market,2026,42 (инференс 23.3 / обучение 19),B USD,V,S30,"55% инференс; 2027: $66B, 59%"
+world_ai_compute,Market,end-2025,~20M,H100e,E,S05,
+h100e_per_chip,Hardware,,H100/H200 1.00; GB200 2.53; Trainium2 0.66; TPUv7 2.3,H100e,V,S04;S10,
+it_watts_per_chip,Hardware,,H100/H200 1453; GB200 2090; Trainium2 871,W,V,S04,сервер × 1.14 IT-overhead
+fleet_efficiency,Hardware,end-2025,NVIDIA-mix OpenAI 945; TPU 1009; Trainium2 754; Anthropic blended 865,H100e/MW,E,S04,
+pue_range,Hardware,,1.1–1.7,ratio,V,S04,если ГВт — мощность объекта

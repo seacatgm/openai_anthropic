@@ -1,0 +1,5 @@
+file,source,sha256,sha256_ref_2026-09-27,unchanged_since_2026-09-27
+ai_chip_users_year_end_by_lab_2026-09-27.csv,download,a42673451e91a9896ed285ec74f66442473c07f9fedc89695a75ef3e4701169c,a42673451e91a9896ed285ec74f66442473c07f9fedc89695a75ef3e4701169c,True
+ai_chip_users_intermediates_by_lab_2026-09-27.csv,download,c82052bebfae4ebfb344da71827af02366c49b22cbaa9f32b0c4a3b0f7345be5,c82052bebfae4ebfb344da71827af02366c49b22cbaa9f32b0c4a3b0f7345be5,True
+
+# repo,https://github.com/epoch-research/ai-compute-users,15c608704dad74c7b7a956c77bbb4e8b602f6670,2026-09-09

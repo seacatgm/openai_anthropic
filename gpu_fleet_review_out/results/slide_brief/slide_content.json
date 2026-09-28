@@ -1,0 +1,384 @@
+{
+  "as_of": "2026-09-27",
+  "sources_checked_on": "2026-09-27",
+  "language": "ru",
+  "format": "один слайд 16:9",
+  "headline": "Число чипов не публикуется. В эквивалентах H100: OpenAI ≈ 1,7 млн, Anthropic ≈ 1,2 млн на конец 2025; сегодня, по нашей оценке, примерно в 2,5 раза больше у обеих. Деление между обучением и инференсом известно только в деньгах: в 2025 году 49/51 у OpenAI и 60/40 у Anthropic; в 2026 по плану OpenAI доля обучения 59–69 %, у Anthropic по сценариям 34–54 %.",
+  "headline_short": "Число чипов не публикуется. В эквивалентах H100: OpenAI ≈ 1,7 млн, Anthropic ≈ 1,2 млн на конец 2025, сегодня по нашей оценке ≈ в 2,5 раза больше. Деление между обучением и инференсом известно только в деньгах.",
+  "h100e_definition": "Эквивалент H100 — вычислительная мощность одного NVIDIA H100 (единица Epoch AI); один GB200 = 2,53 эквивалента, один Trainium2 = 0,66.",
+  "gw_definition": "ГВт — потребление вычислительного оборудования (серверы и сеть), без охлаждения и потерь здания.",
+  "key_messages_note": "для понимания контекста; на слайд текстом не выносить — эти данные уже представлены в графиках",
+  "key_messages": [
+    "Конец 2025 (сопоставимая точка): OpenAI ≈ 1,9 ГВт (раскрыто компанией) ≈ 1,74 млн эквивалентов H100 (оценка Epoch AI, 90 % интервал 1,25–2,19 млн); Anthropic ≈ 1,4 ГВт (оценка OpenAI) ≈ 1,19 млн (0,84–1,72 млн).",
+    "27.09.2026 (наша модель, экстраполяция от Epoch AI): OpenAI ≈ 4,27 млн (3,00–6,08 млн) ≈ 4,6 ГВт; Anthropic ≈ 3,03 млн (1,95–4,70 млн) ≈ 3,3 ГВт.",
+    "Сплит расходов на вычисления «обучение и исследования / инференс»: OpenAI 71/29 (2024), 49/51 (2025), в 2026 по плану обучение 59–69 %; Anthropic 60/40 (2025), в 2026 по сценариям обучение 34–54 %."
+  ],
+  "left_chart": {
+    "title": "Парк в эквивалентах H100: медиана и 90 % интервал",
+    "y_axis": "млн эквивалентов H100",
+    "bars": [
+      {
+        "company": "OpenAI",
+        "period": "конец 2025",
+        "median_mln": 1.74,
+        "p05_mln": 1.25,
+        "p95_mln": 2.19,
+        "status": "оценка Epoch AI",
+        "fill": "сплошная",
+        "gw_label": "1,9 ГВт — раскрыто компанией",
+        "source": "Epoch AI, AI Chip Users, 09.09.2026",
+        "gw_source": "блог OpenAI (финансовый директор Сара Фрайар), 18.01.2026"
+      },
+      {
+        "company": "OpenAI",
+        "period": "27.09.2026",
+        "median_mln": 4.27,
+        "p05_mln": 3.0,
+        "p95_mln": 6.08,
+        "status": "наша оценка (экстраполяция)",
+        "fill": "штриховка",
+        "gw_label": "≈ 4,6 ГВт (3,3–6,6) — наша оценка",
+        "source": "наша модель на основе Epoch AI"
+      },
+      {
+        "company": "Anthropic",
+        "period": "конец 2025",
+        "median_mln": 1.19,
+        "p05_mln": 0.84,
+        "p95_mln": 1.72,
+        "status": "оценка Epoch AI",
+        "fill": "сплошная",
+        "gw_label": "≈ 1,4 ГВт — оценка OpenAI (конкурента)",
+        "source": "Epoch AI, AI Chip Users, 09.09.2026",
+        "gw_source": "Bloomberg, меморандум OpenAI инвесторам, 09.04.2026"
+      },
+      {
+        "company": "Anthropic",
+        "period": "27.09.2026",
+        "median_mln": 3.03,
+        "p05_mln": 1.95,
+        "p95_mln": 4.7,
+        "status": "наша оценка (экстраполяция)",
+        "fill": "штриховка",
+        "gw_label": "≈ 3,3 ГВт (2,1–5,1) — наша оценка",
+        "source": "наша модель на основе Epoch AI"
+      }
+    ],
+    "y_max_suggested": 7.5
+  },
+  "right_chart": {
+    "title": "Доля расходов на вычисления: обучение и исследования / инференс",
+    "x_axis": "0–100 %",
+    "bars": [
+      {
+        "company": "OpenAI",
+        "year": "2024",
+        "training_pct": [
+          71,
+          71
+        ],
+        "inference_pct": [
+          29,
+          29
+        ],
+        "status": "оценка Epoch AI по данным The Information",
+        "fill": "сплошная",
+        "source": "Epoch AI (по данным The Information), 10.10.2025"
+      },
+      {
+        "company": "OpenAI",
+        "year": "2025",
+        "training_pct": [
+          49,
+          49
+        ],
+        "inference_pct": [
+          51,
+          51
+        ],
+        "status": "оценка Epoch AI (The Information, Sacra)",
+        "fill": "сплошная",
+        "source": "Epoch AI, методология AI Chip Users, сентябрь 2026; Sacra, 29.07.2026"
+      },
+      {
+        "company": "OpenAI",
+        "year": "2026, план (сценарии)",
+        "training_pct": [
+          59,
+          69
+        ],
+        "inference_pct": [
+          31,
+          41
+        ],
+        "status": "сценарии по плану",
+        "fill": "обучение 0–max штриховкой цветом компании, на min — контурная отметка; инференс серый от max до 100 %",
+        "source": "The Information (через The Decoder), 21.02.2026; Bloomberg, показания Грега Брокмана, 05.05.2026"
+      },
+      {
+        "company": "Anthropic",
+        "year": "2024",
+        "training_pct": null,
+        "inference_pct": null,
+        "status": "не раскрыто",
+        "fill": "контур 1 px серым #8f8e88 без заливки, внутри по центру текст «не раскрыто» тёмно-серым",
+        "source": "Epoch AI, методология AI Chip Users, сентябрь 2026"
+      },
+      {
+        "company": "Anthropic",
+        "year": "2025",
+        "training_pct": [
+          60,
+          60
+        ],
+        "inference_pct": [
+          40,
+          40
+        ],
+        "status": "оценка: прогноз компании по The Information и расчёт Epoch AI",
+        "fill": "сплошная",
+        "source": "Epoch AI (по данным The Information), 04.02.2026"
+      },
+      {
+        "company": "Anthropic",
+        "year": "2026, первое полугодие (сценарии)",
+        "training_pct": [
+          34,
+          54
+        ],
+        "inference_pct": [
+          46,
+          66
+        ],
+        "status": "сценарии по квартальным данным The Wall Street Journal",
+        "fill": "обучение 0–max штриховкой цветом компании, на min — контурная отметка; инференс серый от max до 100 %",
+        "source": "The Wall Street Journal, 20.05.2026"
+      }
+    ]
+  },
+  "legend": {
+    "company_colors": {
+      "OpenAI": "#2470cc",
+      "Anthropic": "#c9491a"
+    },
+    "inference_neutral": "#8f8e88",
+    "status_encoding": {
+      "факт (раскрыто компанией или подтверждено прессой)": "сплошная заливка",
+      "оценка Epoch AI": "сплошная заливка, усы — 90 % интервал",
+      "наша оценка / сценарий": "диагональная штриховка"
+    }
+  },
+  "caveats": [
+    "«Обучение» здесь — весь бюджет исследований и разработки (эксперименты, дообучение); финальный прогон одной модели — меньшая его часть.",
+    "Инференс на площадках партнёров (Amazon Bedrock, Google Vertex) учтён у Anthropic и не учтён у OpenAI (Microsoft Azure): сравнение парков на левом графике занижает OpenAI на 10–25 %."
+  ],
+  "footer": "Источники: блог OpenAI (финансовый директор Сара Фрайар), 18.01.2026; Epoch AI, AI Chip Users, 09.09.2026; Epoch AI, методология AI Chip Users, сентябрь 2026; Bloomberg, меморандум OpenAI инвесторам, 09.04.2026; Bloomberg, показания Грега Брокмана, 05.05.2026; The Information (через The Decoder), 21.02.2026; Sacra, 29.07.2026; Epoch AI (по данным The Information), 10.10.2025; Epoch AI (по данным The Information), 04.02.2026; The Wall Street Journal, 20.05.2026; Epoch AI, 23.03.2026. Все ссылки проверены 27 сентября 2026. Оценка на 27.09.2026 — 200 000 прогонов модели с интервалами.",
+  "optional_numbers": {
+    "physical_accelerators_end2025": {
+      "OpenAI": "≈ 1,14 млн (0,84 млн–1,34 млн)",
+      "Anthropic": "≈ 1,25 млн (0,90 млн–1,76 млн)",
+      "status": "наш расчёт по параметрам Epoch AI"
+    },
+    "cloud_compute_spend_2025_bn_usd": {
+      "OpenAI": 16.3,
+      "Anthropic": 6.8,
+      "status": "Epoch AI по данным The Information"
+    },
+    "split_amounts_bn_usd": {
+      "OpenAI 2024": "обучение ≈ 5, инференс ≈ 2",
+      "OpenAI 2025": "обучение ≈ 8, инференс 8,4",
+      "OpenAI 2026 план": "обучение 32, инференс 14,1–22 (сценарии)",
+      "Anthropic 2025": "обучение 4,1, инференс ≈ 2,7",
+      "Anthropic 2026 I полугодие (сценарии)": "обучение 3,2–5,1, инференс 4,4–6,3"
+    },
+    "growth_prior_per_year": {
+      "OpenAI": "2,5–4,5 раза (Epoch AI: «более чем утроится» за 2026; бюджет $50 млрд ≈ ×3)",
+      "Anthropic": "2,5–5 раз (вводы TPU, Trainium, Colossus 1, Azure; прогноз OpenAI 3–4 ГВт)"
+    },
+    "cross_check_by_sites": {
+      "OpenAI": "не меньше 2,00 млн (нижняя граница по каталогу ЦОД Epoch AI)",
+      "Anthropic": "2,53 млн (2,22 млн–2,84 млн)"
+    },
+    "end_2026_outlook": [
+      "OpenAI (заявлено компаниями): 10 ГВт законтрактовано в США к апрелю 2026 (OpenAI, 29.04.2026); первые гигаватты во 2-м полугодии 2026 — AMD MI450 (пресс-релиз AMD, 06.10.2025), Broadcom (Broadcom, 13.10.2025). Письмо о намерениях с NVIDIA на 10 ГВт систем Vera Rubin (пресс-релиз NVIDIA, 22.09.2025) в договор не оформлено и заменено инвестицией $30 млрд (Financial Times (пересказ Business Standard), 20.02.2026); мощности по нему не планируются",
+      "Anthropic (заявлено компаниями): «почти 1 ГВт» Trainium к концу 2026 (Anthropic, 20.04.2026), «значительно больше 1 ГВт» TPU в 2026 (Anthropic, 23.10.2025), до 1 ГВт Azure (Anthropic, 18.11.2025), Colossus 1 (~300 МВт) с июня 2026 (блог xAI (SpaceX) и Anthropic, 06.05.2026); прогноз OpenAI (оценка конкурента) — 3–4 ГВт (Bloomberg, меморандум OpenAI инвесторам, 09.04.2026)"
+    ]
+  },
+  "sources": [
+    {
+      "publisher": "OpenAI (Sarah Friar)",
+      "date": "2026-01-18",
+      "title": "A business that scales with the value of intelligence",
+      "url": "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/",
+      "accessed": "2026-09-27",
+      "name": "блог OpenAI (финансовый директор Сара Фрайар), 18.01.2026"
+    },
+    {
+      "publisher": "Epoch AI (Josh You)",
+      "date": "2026-09-09",
+      "title": "Introducing the AI Chip Users explorer",
+      "url": "https://epoch.ai/latest/introducing-the-ai-chip-users-explorer",
+      "accessed": "2026-09-27",
+      "name": "Epoch AI, AI Chip Users, 09.09.2026"
+    },
+    {
+      "publisher": "Bloomberg (Shirin Ghaffary); Key Context (Tae Kim)",
+      "date": "2026-04-09",
+      "title": "OpenAI tells investors it has computing advantage over Anthropic; memo 'Compute is the ballgame'",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-09/openai-tells-investors-it-has-computing-advantage-over-anthropic",
+      "accessed": "2026-09-27",
+      "name": "Bloomberg, меморандум OpenAI инвесторам, 09.04.2026"
+    },
+    {
+      "publisher": "Bloomberg",
+      "date": "2026-05-05",
+      "title": "OpenAI to spend $50 billion on computing in 2026, Brockman says",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-05/openai-to-spend-50-billion-on-computing-in-2026-brockman-says",
+      "accessed": "2026-09-27",
+      "name": "Bloomberg, показания Грега Брокмана, 05.05.2026"
+    },
+    {
+      "publisher": "The Decoder (по The Information)",
+      "date": "2026-02-21",
+      "title": "OpenAI adds $111 billion to its cash burn forecast",
+      "url": "https://the-decoder.com/openai-adds-111-billion-to-its-cash-burn-forecast-as-ai-costs-spiral-beyond-projections/",
+      "accessed": "2026-09-27",
+      "name": "The Information (через The Decoder), 21.02.2026"
+    },
+    {
+      "publisher": "Epoch AI",
+      "date": "2026-02-04",
+      "title": "Compute accounts for the majority of expenses of AI companies",
+      "url": "https://epoch.ai/data-insights/company-spending-breakdown",
+      "accessed": "2026-09-27",
+      "name": "Epoch AI (по данным The Information), 04.02.2026"
+    },
+    {
+      "publisher": "WSJ; Dealroom (SemiAnalysis); Zitron",
+      "date": "2026-05-20",
+      "title": "Mind-blowing growth is about to propel Anthropic into its first profitable quarter",
+      "url": "https://www.wsj.com/tech/ai/mind-blowing-growth-is-about-to-propel-anthropic-into-its-first-profitable-quarter-7edbf2f4",
+      "accessed": "2026-09-27",
+      "name": "The Wall Street Journal, 20.05.2026"
+    },
+    {
+      "publisher": "Epoch AI",
+      "date": "2026-09",
+      "title": "AI Chip Users — Methodology",
+      "url": "https://epoch.ai/data/ai-chip-users-documentation/methodology",
+      "accessed": "2026-09-27",
+      "name": "Epoch AI, методология AI Chip Users, сентябрь 2026"
+    },
+    {
+      "publisher": "Sacra",
+      "date": "2026-07-29",
+      "title": "OpenAI revenue, valuation & funding",
+      "url": "https://sacra.com/c/openai/",
+      "accessed": "2026-09-27",
+      "name": "Sacra, 29.07.2026"
+    },
+    {
+      "publisher": "Epoch AI",
+      "date": "2025-10-10",
+      "title": "Most of OpenAI's 2024 compute went to experiments",
+      "url": "https://epoch.ai/data-insights/openai-compute-spend",
+      "accessed": "2026-09-27",
+      "name": "Epoch AI (по данным The Information), 10.10.2025"
+    },
+    {
+      "publisher": "Epoch AI",
+      "date": "2026-03-23",
+      "title": "Final training runs account for a minority of R&D compute spending",
+      "url": "https://epoch.ai/gradient-updates/r-and-d-vs-training-compute",
+      "accessed": "2026-09-27",
+      "name": "Epoch AI, 23.03.2026"
+    },
+    {
+      "publisher": "Epoch AI",
+      "date": "2026-09-24",
+      "title": "AI Data Centers explorer — Colossus 1/2, Rainier (New Carlisle), Stargate Abilene",
+      "url": "https://epoch.ai/data/ai-data-centers",
+      "accessed": "2026-09-27",
+      "name": "Epoch AI, каталог ЦОД, 24.09.2026"
+    },
+    {
+      "publisher": "Bloomberg (Dina Bass); The Decoder",
+      "date": "2026-04-29",
+      "title": "Building the compute infrastructure for the Intelligence Age",
+      "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age/",
+      "accessed": "2026-09-27",
+      "name": "OpenAI, 29.04.2026"
+    },
+    {
+      "publisher": "NVIDIA/OpenAI press release (mirror)",
+      "date": "2025-09-22",
+      "title": "OpenAI and NVIDIA announce strategic partnership to deploy 10 gigawatts",
+      "url": "https://investor.nvidia.com/news/press-release-details/2025/OpenAI-and-NVIDIA-Announce-Strategic-Partnership-to-Deploy-10-Gigawatts-of-NVIDIA-Systems/default.aspx",
+      "accessed": "2026-09-27",
+      "name": "пресс-релиз NVIDIA, 22.09.2025"
+    },
+    {
+      "publisher": "Financial Times via Business Standard",
+      "date": "2026-02-20",
+      "title": "Nvidia $30bn OpenAI investment after shelving $100bn deal",
+      "url": "https://www.business-standard.com/technology/tech-news/nvidia-30bn-openai-investment-after-shelving-100bn-deal-126022000503_1.html",
+      "accessed": "2026-09-27",
+      "name": "Financial Times (пересказ Business Standard), 20.02.2026"
+    },
+    {
+      "publisher": "AMD/OpenAI press release",
+      "date": "2025-10-06",
+      "title": "AMD and OpenAI announce strategic partnership to deploy 6 gigawatts of AMD GPUs",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+      "accessed": "2026-09-27",
+      "name": "пресс-релиз AMD, 06.10.2025"
+    },
+    {
+      "publisher": "Broadcom/OpenAI press release",
+      "date": "2025-10-13",
+      "title": "OpenAI and Broadcom announce strategic collaboration to deploy 10 gigawatts of OpenAI-designed AI accelerators",
+      "url": "https://www.broadcom.com/company/news/product-releases/63631",
+      "accessed": "2026-09-27",
+      "name": "Broadcom, 13.10.2025"
+    },
+    {
+      "publisher": "Anthropic; Amazon",
+      "date": "2026-04-20",
+      "title": "Anthropic and Amazon expand compute collaboration",
+      "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
+      "accessed": "2026-09-27",
+      "name": "Anthropic, 20.04.2026"
+    },
+    {
+      "publisher": "Anthropic",
+      "date": "2025-10-23",
+      "title": "Expanding our use of Google Cloud TPUs and Services",
+      "url": "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services",
+      "accessed": "2026-09-27",
+      "name": "Anthropic, 23.10.2025"
+    },
+    {
+      "publisher": "Anthropic; Microsoft; NVIDIA",
+      "date": "2025-11-18",
+      "title": "Microsoft, NVIDIA, and Anthropic announce strategic partnerships",
+      "url": "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships",
+      "accessed": "2026-09-27",
+      "name": "Anthropic, 18.11.2025"
+    },
+    {
+      "publisher": "SpaceXAI; Anthropic; TechCrunch; SpaceX S-1",
+      "date": "2026-05-06",
+      "title": "New Compute Partnership with Anthropic; Anthropic will pay xAI $1.25B per month",
+      "url": "https://x.ai/news/anthropic-compute-partnership",
+      "accessed": "2026-09-27",
+      "name": "блог xAI (SpaceX) и Anthropic, 06.05.2026"
+    }
+  ],
+  "forbidden_on_slide": [
+    "коды источников и статусов вроде [S07], [V2], [E]",
+    "термины nowcast, H100e, R&D-compute, Δt, PUE без расшифровки",
+    "любые числа, которых нет в этом пакете",
+    "суммирование гигаватт из пресс-релизов как «парка»",
+    "точечные утверждения о 2026 годе без слова «оценка» или «сценарий»"
+  ]
+}

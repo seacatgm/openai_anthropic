@@ -1,0 +1,343 @@
+{
+  "meta": {
+    "date": "2026-09-27",
+    "basis": "cloud compute spend, USD bn"
+  },
+  "history": [
+    {
+      "company": "OpenAI",
+      "period": "2024",
+      "rd_bn": 5.0,
+      "inf_bn": 2.0,
+      "total_bn": 6.8,
+      "rd_share": 0.7142857142857143,
+      "inf_share": 0.2857142857142857,
+      "status": "V",
+      "source": "S07;S04",
+      "formula": "s_RD = C_RD / (C_RD + C_inf)"
+    },
+    {
+      "company": "OpenAI",
+      "period": "2025",
+      "rd_bn": 8.0,
+      "inf_bn": 8.4,
+      "total_bn": 16.3,
+      "rd_share": 0.48780487804878053,
+      "inf_share": 0.5121951219512195,
+      "status": "V/V2",
+      "source": "S04;S16;S09",
+      "formula": "s_RD = C_RD / (C_RD + C_inf)"
+    },
+    {
+      "company": "OpenAI",
+      "period": "2026 план",
+      "rd_bn": 32.0,
+      "inf_bn": NaN,
+      "total_bn": 50.0,
+      "rd_share": NaN,
+      "inf_share": NaN,
+      "status": "V2",
+      "source": "S15;S13",
+      "formula": "s_RD = C_RD / (C_RD + C_inf)"
+    },
+    {
+      "company": "OpenAI",
+      "period": "2027 план",
+      "rd_bn": 65.0,
+      "inf_bn": NaN,
+      "total_bn": NaN,
+      "rd_share": NaN,
+      "inf_share": NaN,
+      "status": "V2",
+      "source": "S15",
+      "formula": "s_RD = C_RD / (C_RD + C_inf)"
+    },
+    {
+      "company": "Anthropic",
+      "period": "2024",
+      "rd_bn": NaN,
+      "inf_bn": NaN,
+      "total_bn": 2.5,
+      "rd_share": NaN,
+      "inf_share": NaN,
+      "status": "V",
+      "source": "S04",
+      "formula": "s_RD = C_RD / (C_RD + C_inf)"
+    },
+    {
+      "company": "Anthropic",
+      "period": "2025",
+      "rd_bn": 4.1,
+      "inf_bn": 2.7,
+      "total_bn": 6.8,
+      "rd_share": 0.6029411764705882,
+      "inf_share": 0.3970588235294118,
+      "status": "V/E",
+      "source": "S06;S04",
+      "formula": "s_RD = C_RD / (C_RD + C_inf)"
+    },
+    {
+      "company": "Anthropic",
+      "period": "Q1 2026",
+      "rd_bn": NaN,
+      "inf_bn": NaN,
+      "total_bn": 3.41,
+      "rd_share": NaN,
+      "inf_share": NaN,
+      "status": "V2/E",
+      "source": "S29",
+      "formula": "s_RD = C_RD / (C_RD + C_inf)"
+    },
+    {
+      "company": "Anthropic",
+      "period": "Q2 2026 (прогноз)",
+      "rd_bn": NaN,
+      "inf_bn": NaN,
+      "total_bn": 6.1,
+      "rd_share": NaN,
+      "inf_share": NaN,
+      "status": "V2/E",
+      "source": "S29",
+      "formula": "s_RD = C_RD / (C_RD + C_inf)"
+    }
+  ],
+  "openai_2026": [
+    {
+      "scenario": "A. Февральский план (Sacra $14,1 млрд, старый винтаж)",
+      "rd_bn": 32.0,
+      "inf_bn": 14.1,
+      "total_bn": 46.1,
+      "rd_share": 0.6941431670281996,
+      "inf_share": 0.30585683297180044,
+      "status": "E",
+      "formula": "C_RD = 32 [S15]; C_inf = 14.1; s_RD = 32 / (32 + 14.1)"
+    },
+    {
+      "scenario": "B. Бюджет Брокмана: $50 − $32",
+      "rd_bn": 32.0,
+      "inf_bn": 18.0,
+      "total_bn": 50.0,
+      "rd_share": 0.64,
+      "inf_share": 0.36,
+      "status": "E",
+      "formula": "C_RD = 32 [S15]; C_inf = 18; s_RD = 32 / (32 + 18)"
+    },
+    {
+      "scenario": "C. Инференс догоняет (верхняя граница)",
+      "rd_bn": 32.0,
+      "inf_bn": 22.0,
+      "total_bn": 54.0,
+      "rd_share": 0.5925925925925926,
+      "inf_share": 0.4074074074074074,
+      "status": "E",
+      "formula": "C_RD = 32 [S15]; C_inf = 22; s_RD = 32 / (32 + 22)"
+    },
+    {
+      "scenario": "D. Инференс ×2 к 2025 ($8,4 млрд × 2)",
+      "rd_bn": 32.0,
+      "inf_bn": 16.8,
+      "total_bn": 48.8,
+      "rd_share": 0.6557377049180328,
+      "inf_share": 0.34426229508196726,
+      "status": "E",
+      "formula": "C_RD = 32 [S15]; C_inf = 16.8; s_RD = 32 / (32 + 16.8)"
+    }
+  ],
+  "anthropic_2026": [
+    {
+      "quarter": "Q1 2026",
+      "revenue_bn": 4.8,
+      "c_compute_to_revenue": 0.71,
+      "total_bn": 3.408,
+      "inference_gross_margin": 0.5,
+      "inf_bn": 2.4,
+      "rd_bn": 1.008,
+      "rd_share": 0.29577464788732394,
+      "inf_share": 0.704225352112676,
+      "accepted": true,
+      "status": "E",
+      "formula": "C_total = 0.71 × 4.8 [S29]; C_inf = (1 − 0.5) × 4.8; C_RD = C_total − C_inf"
+    },
+    {
+      "quarter": "Q1 2026",
+      "revenue_bn": 4.8,
+      "c_compute_to_revenue": 0.71,
+      "total_bn": 3.408,
+      "inference_gross_margin": 0.6,
+      "inf_bn": 1.92,
+      "rd_bn": 1.488,
+      "rd_share": 0.4366197183098592,
+      "inf_share": 0.5633802816901409,
+      "accepted": true,
+      "status": "E",
+      "formula": "C_total = 0.71 × 4.8 [S29]; C_inf = (1 − 0.6) × 4.8; C_RD = C_total − C_inf"
+    },
+    {
+      "quarter": "Q1 2026",
+      "revenue_bn": 4.8,
+      "c_compute_to_revenue": 0.71,
+      "total_bn": 3.408,
+      "inference_gross_margin": 0.65,
+      "inf_bn": 1.68,
+      "rd_bn": 1.728,
+      "rd_share": 0.5070422535211268,
+      "inf_share": 0.49295774647887325,
+      "accepted": true,
+      "status": "E",
+      "formula": "C_total = 0.71 × 4.8 [S29]; C_inf = (1 − 0.65) × 4.8; C_RD = C_total − C_inf"
+    },
+    {
+      "quarter": "Q1 2026",
+      "revenue_bn": 4.8,
+      "c_compute_to_revenue": 0.71,
+      "total_bn": 3.408,
+      "inference_gross_margin": 0.72,
+      "inf_bn": 1.344,
+      "rd_bn": 2.064,
+      "rd_share": 0.6056338028169014,
+      "inf_share": 0.39436619718309857,
+      "accepted": true,
+      "status": "E",
+      "formula": "C_total = 0.71 × 4.8 [S29]; C_inf = (1 − 0.72) × 4.8; C_RD = C_total − C_inf"
+    },
+    {
+      "quarter": "Q2 2026",
+      "revenue_bn": 10.9,
+      "c_compute_to_revenue": 0.56,
+      "total_bn": 6.104000000000001,
+      "inference_gross_margin": 0.5,
+      "inf_bn": 5.45,
+      "rd_bn": 0.6540000000000008,
+      "rd_share": 0.10714285714285726,
+      "inf_share": 0.8928571428571428,
+      "accepted": false,
+      "status": "E",
+      "formula": "C_total = 0.56 × 10.9 [S29]; C_inf = (1 − 0.5) × 10.9; C_RD = C_total − C_inf"
+    },
+    {
+      "quarter": "Q2 2026",
+      "revenue_bn": 10.9,
+      "c_compute_to_revenue": 0.56,
+      "total_bn": 6.104000000000001,
+      "inference_gross_margin": 0.6,
+      "inf_bn": 4.36,
+      "rd_bn": 1.7440000000000007,
+      "rd_share": 0.28571428571428575,
+      "inf_share": 0.7142857142857142,
+      "accepted": true,
+      "status": "E",
+      "formula": "C_total = 0.56 × 10.9 [S29]; C_inf = (1 − 0.6) × 10.9; C_RD = C_total − C_inf"
+    },
+    {
+      "quarter": "Q2 2026",
+      "revenue_bn": 10.9,
+      "c_compute_to_revenue": 0.56,
+      "total_bn": 6.104000000000001,
+      "inference_gross_margin": 0.65,
+      "inf_bn": 3.815,
+      "rd_bn": 2.289000000000001,
+      "rd_share": 0.3750000000000001,
+      "inf_share": 0.6249999999999999,
+      "accepted": true,
+      "status": "E",
+      "formula": "C_total = 0.56 × 10.9 [S29]; C_inf = (1 − 0.65) × 10.9; C_RD = C_total − C_inf"
+    },
+    {
+      "quarter": "Q2 2026",
+      "revenue_bn": 10.9,
+      "c_compute_to_revenue": 0.56,
+      "total_bn": 6.104000000000001,
+      "inference_gross_margin": 0.72,
+      "inf_bn": 3.0520000000000005,
+      "rd_bn": 3.0520000000000005,
+      "rd_share": 0.5,
+      "inf_share": 0.5,
+      "accepted": true,
+      "status": "E",
+      "formula": "C_total = 0.56 × 10.9 [S29]; C_inf = (1 − 0.72) × 10.9; C_RD = C_total − C_inf"
+    }
+  ],
+  "anthropic_h1_2026_accepted": [
+    {
+      "inference_gross_margin": 0.6,
+      "rd_bn": 3.2320000000000007,
+      "inf_bn": 6.28,
+      "rd_share": 0.3397813288477713,
+      "inf_share": 0.6602186711522288
+    },
+    {
+      "inference_gross_margin": 0.65,
+      "rd_bn": 4.017000000000001,
+      "inf_bn": 5.495,
+      "rd_share": 0.42230866274179996,
+      "inf_share": 0.5776913372582001
+    },
+    {
+      "inference_gross_margin": 0.72,
+      "rd_bn": 5.1160000000000005,
+      "inf_bn": 4.396000000000001,
+      "rd_share": 0.5378469301934399,
+      "inf_share": 0.4621530698065602
+    }
+  ],
+  "summary": {
+    "openai_2024": {
+      "company": "OpenAI",
+      "period": "2024",
+      "rd_bn": 5.0,
+      "inf_bn": 2.0,
+      "total_bn": 6.8,
+      "rd_share": 0.7142857142857143,
+      "inf_share": 0.2857142857142857,
+      "status": "V",
+      "source": "S07;S04",
+      "formula": "s_RD = C_RD / (C_RD + C_inf)"
+    },
+    "openai_2025": {
+      "company": "OpenAI",
+      "period": "2025",
+      "rd_bn": 8.0,
+      "inf_bn": 8.4,
+      "total_bn": 16.3,
+      "rd_share": 0.48780487804878053,
+      "inf_share": 0.5121951219512195,
+      "status": "V/V2",
+      "source": "S04;S16;S09",
+      "formula": "s_RD = C_RD / (C_RD + C_inf)"
+    },
+    "anthropic_2025": {
+      "company": "Anthropic",
+      "period": "2025",
+      "rd_bn": 4.1,
+      "inf_bn": 2.7,
+      "total_bn": 6.8,
+      "rd_share": 0.6029411764705882,
+      "inf_share": 0.3970588235294118,
+      "status": "V/E",
+      "source": "S06;S04",
+      "formula": "s_RD = C_RD / (C_RD + C_inf)"
+    },
+    "openai_2026_rd_share_range": [
+      0.5925925925925926,
+      0.6941431670281996
+    ],
+    "anthropic_2026_rd_share_range_quarters": [
+      0.28571428571428575,
+      0.6056338028169014
+    ],
+    "anthropic_h1_2026_rd_share_range": [
+      0.3397813288477713,
+      0.5378469301934399
+    ],
+    "anthropic_h1_2026_central_m65": {
+      "inference_gross_margin": 0.65,
+      "rd_bn": 4.017000000000001,
+      "inf_bn": 5.495,
+      "rd_share": 0.42230866274179996,
+      "inf_share": 0.5776913372582001
+    },
+    "rejected_scenarios": [
+      "Q2 2026, маржа 50 %: R&D $0,65 млрд/кв. < $1,0 млрд"
+    ]
+  }
+}

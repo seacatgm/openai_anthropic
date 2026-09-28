@@ -1,0 +1,10 @@
+# Воспроизведение gpu_fleet_review.ipynb (проверено на Python 3.9.6)
+numpy>=1.26,<3
+pandas>=2.0,<3
+matplotlib>=3.7,<4
+# исполнение ноутбука из командной строки: jupyter nbconvert --to notebook --execute --inplace gpu_fleet_review.ipynb
+nbformat>=5.9
+nbconvert>=7.10
+nbclient>=0.9
+ipykernel>=6.25
+ipython>=8.10
